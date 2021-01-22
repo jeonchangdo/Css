@@ -1,0 +1,90 @@
+/* externalCSS.css */
+@charset "UTF-8";
+
+#wrap{
+    margin: 0 auto; /*가운데 정렬*/
+    width: 800px; /*가운데 정렬 하기 위해서는 width 값이 있어야 함*/
+    text-align: center;
+    }
+
+#mainMenuBox{
+    height: 35px;
+    line-height: 35px; /* 줄간격- height와 같은 크기를 주면 수직 가운데 정렬 효과를 줌 */
+    background-color: #333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#mainMenuBox ul{
+    padding-left: 0;
+    margin: 0;
+    /*type 없음*/
+    list-style: none;
+}
+
+#mainMenuBox li{
+    /*한 줄로 정렬*/
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+#mainMenuBox a{
+    /* a 태그 밑줄 없애기*/
+    text-decoration: none;
+    /* a 태그의 영역을 li의 width만큼 넓힌다. */
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 1px blanchedalmond;
+}
+/* 마우스를 메뉴에 올렸을 때 상태 변화 */
+/* 마우스 상태 click -> 메뉴 선택
+    hover -> 마우스를 메뉴 항목에 올렸을 때 */
+/* : -> 상태를 의미함
+아래는 id가 mainMenuBox의 a태그에 마우스를 메뉴 항목에 올렸을 때를 의미*/
+#mainMenuBox a:hover{
+    color: red;
+    text-decoration: underline;
+    background-color: black;
+}
+
+/*상품 소개 테이블 설정*/
+table {
+    margin: 0 auto;
+    width: 600px; /*테이블 전체 넓이 */
+    margin-bottom: 30px;
+}
+
+#prdName {
+    color: blue;
+    font-weight: bold;
+}
+
+#price {
+    color: red;
+}
+img {
+    margin-bottom: 20px;
+}
+
+/*공지사항 커뮤니티 설정*/
+.box{
+    display: inline-block;
+    border: solid 1px gray;
+    border-radius: 10px; /* 모서리를 둥글게 만들어줌 */
+    width: 320px;
+    height: 150px;
+    font-size: small;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.box a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+h4, hr {margin-bottom: 10px;}
